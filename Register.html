@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basirhat Gym</title>
+    <style>
+        body {
+            color: white;
+            background-image: url('img/p4.jpeg');
+        }
+
+        .left {
+            display: inline-block;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            margin: 10px;
+            /* border: 2px solid red; */
+        }
+
+        .left img {
+            width: 142px;
+            height: 83px;
+            filter: invert(100%);
+        }
+
+        .left div {
+            line-height: 23px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .right {
+            position: absolute;
+            top: 0px;
+            right: 34px;
+            margin: 20px;
+            display: inline-block;
+            /* border: 2px solid yellow; */
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 25px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 34px 23px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: yellow;
+        }
+
+        .btn {
+            margin: 0px;
+            padding: 6px;
+            background-color: black;
+            color: white;
+            border: 2px solid gray;
+            border-radius: 11px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            text-decoration: underline;
+            color: yellow;
+        }
+
+        .container {
+            /* border: 2px solid white; */
+            margin: 44px 198px;
+            padding: 39px 31px;
+            width: 54%;
+            /* border-radius: 17px; */
+        }
+
+        .container h1 {
+            text-align: center;
+            font-size: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="img/logo 1.jpg" alt="">
+            <div>Sandi Fitness</div>
+        </div>
+        <div class="right">
+            <ul class="navbar">
+                <li><a href="/GYM.html">Home</a></li>
+                <li><a href="/Login.html">Login</a></li>
+                <li><a href="/Facalty.html">Facalty</a></li>
+                <li><a href="/Register.html" class="active">Register</a></li>
+            </ul>
+            <button class="btn">call us</button>
+        </div>
+    </header>
+    <div class="container">
+        <H1>To Join Our Gym Please Register It</H1>
+        <form action="backend.php">
+            <div>
+                Name: <input type="text" name="myname">
+            </div>
+            <br>
+            <div>
+                Age:<input type="text" name="myAge">
+            </div>
+            <br>
+            <div>
+                <label for="Gender">Gender:</label>
+                <select name="mygender" id="Gender">
+                    <option value="Boy">Boy</option>
+                    <option value="Girl">Girl</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                Email Id:<input type="email" name="myemailid">
+            </div>
+            <br>
+            <div>
+                Date:<input type="date" name="mydate">
+            </div>
+            <br>
+            <div>
+                Are You 18+ :<input type="checkbox" name="myeligibility">
+            </div>
+            <br>
+            <div>
+                What You Want: <br> <textarea name="myname" cols="30" rows="10"></textarea>
+            </div>
+            <br>
+            <div>
+                <label for="shift">shift:</label>
+                <select name="myshift" id="shift">
+                    <option value="Morning">Morning</option>
+                    <option value="Afternoon">Afternoon</option>
+                    <option value="Evening">Evening</option>
+                    <option value="Night">Night</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="Time">Time</label>
+                <select name="mytime" id="Time">
+                    <option value="Time">08 A.M to 09 A.M</option>
+                    <option value="Time">09 A.M to 10 A.M</option>
+                    <option value="Time">12 P.M to 01 P.M</option>
+                    <option value="Time">01 P.M to 02 P.M</option>
+                    <option value="Time">05 P.M to 06 P.M</option>
+                    <option value="Time">06 P.M to 07 P.M</option>
+                    <option value="Time">07 P.M to 08 P.M</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                Mobile Number:<input type="text" name="mynumber">
+            </div>
+            <br>
+            <div>
+                Another Number:<input type="text" name="myAnothernumber">
+            </div>
+            <input type="submit" value="Submit">
+            <input type="reset" value="reset">
+        </form>
+    </div>
+</body>
+
+</html>
